@@ -18,7 +18,7 @@ class EmailParser
   def parse
     emails.split.collect do |address| 
       # binding.pry
-      address.split(",").join.uniq
+      address.split(",").join
     end
   end 
 end   
