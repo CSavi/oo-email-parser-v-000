@@ -19,6 +19,5 @@ class EmailParser
     emails.split.collect do |address| 
       address.split(",").join
     end
-    emails.uniq
   end
 end   
