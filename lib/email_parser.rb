@@ -16,7 +16,7 @@ class EmailParser
   #separate into unique email address 
   def parse
     emails.split.collect do |address| 
-      address.split(",").join 
+      address.split(",").join if emails.uniq
     end
   end
 end   
