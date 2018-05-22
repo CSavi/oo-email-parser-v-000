@@ -16,10 +16,10 @@ class EmailParser
   
   #separate into unique email address 
   def parse
-    binding.pry
     emails.split.collect do |address| 
       # binding.pry
       address.split(",").join
+      binding.pry
     end
   end 
 end   
