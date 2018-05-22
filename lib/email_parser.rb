@@ -18,6 +18,6 @@ class EmailParser
   def parse
     emails.split.collect do |address| 
       address.split(",").join
-    end.flatten.uniq!
+    end.uniq!
   end
 end   
